@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="fr" target-language="fr" datatype="plaintext" original="file.ext">
+    <header>
+      <tool tool-id="symfony" tool-name="Symfony"/>
+    </header>
+    <body>
+      <trans-unit id="Rk.0YHK" resname="DigitalFirstSteps">
+        <source>DigitalFirstSteps</source>
+        <target>Premiers pas numériques</target>
+      </trans-unit>
+      <trans-unit id="CPBMOGr" resname="SymfonyPractice">
+        <source>SymfonyPractice</source>
+        <target>Entrainement sur Symfony</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
