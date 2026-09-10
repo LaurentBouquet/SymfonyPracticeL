@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Service\Calculate;
 use Psr\Log\LoggerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
@@ -11,7 +12,7 @@ use Symfony\Contracts\Translation\TranslatorInterface;
 final class WelcomeController extends AbstractController
 {
     #[Route('/', name: 'app_welcome')]
-    public function index(LoggerInterface $logger, TranslatorInterface $translator): Response
+    public function index(Calculate $c, LoggerInterface $logger, TranslatorInterface $translator): Response
     {
         $currentDate = new \DateTimeImmutable(
             'now',
@@ -20,12 +21,15 @@ final class WelcomeController extends AbstractController
 
         $appName = $translator->trans('DigitalFirstSteps');
 
+        $calc = $c->sum(5, 8);
+
         //Tracer les visites
         $logger->info("Application is starting...");
 
         return $this->render('welcome/index.html.twig', [
             'currentDate' => $currentDate->format('d/m/Y'),
             'appName' => $appName,
+            'calc' => $calc,
         ]);
     }
 }
