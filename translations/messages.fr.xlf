@@ -13,6 +13,38 @@
         <source>SymfonyPractice</source>
         <target>Entrainement sur Symfony</target>
       </trans-unit>
+      <trans-unit id="pNIxNSX" resname="Sign in">
+        <source>Sign in</source>
+        <target>Se connecter</target>
+      </trans-unit>
+      <trans-unit id="lSX_PHJ" resname="Please sign in">
+        <source>Please sign in</source>
+        <target>Créer un compte</target>
+      </trans-unit>
+      <trans-unit id="JZi_tm0" resname="Email">
+        <source>Email</source>
+        <target>Email</target>
+      </trans-unit>
+      <trans-unit id="GqmFSHc" resname="Password">
+        <source>Password</source>
+        <target>Mot de passe</target>
+      </trans-unit>
+      <trans-unit id="fGfBzt6" resname="Register">
+        <source>Register</source>
+        <target>S'enregistrer</target>
+      </trans-unit>
+      <trans-unit id="JKl2Twv" resname="Logout">
+        <source>Logout</source>
+        <target>Se déconnecter</target>
+      </trans-unit>
+      <trans-unit id="4f3WEva" resname="Login">
+        <source>Login</source>
+        <target>Se connecter</target>
+      </trans-unit>
+      <trans-unit id="gR9IGry" resname="agree_terms">
+        <source>agree_terms</source>
+        <target>J'accepte les termes et conditions générales</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
