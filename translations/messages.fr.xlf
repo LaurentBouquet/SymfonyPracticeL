@@ -45,6 +45,54 @@
         <source>agree_terms</source>
         <target>J'accepte les termes et conditions générales</target>
       </trans-unit>
+      <trans-unit id="ebD_LOV" resname="Country index">
+        <source>Country index</source>
+        <target>Liste des pays</target>
+      </trans-unit>
+      <trans-unit id="hm.JYE2" resname="Id">
+        <source>Id</source>
+        <target>Id</target>
+      </trans-unit>
+      <trans-unit id="wbMeKOh" resname="Name">
+        <source>Name</source>
+        <target>Nom</target>
+      </trans-unit>
+      <trans-unit id="1_MZEgP" resname="Actions">
+        <source>Actions</source>
+        <target>Actions</target>
+      </trans-unit>
+      <trans-unit id="hm005Tf" resname="no records found">
+        <source>no records found</source>
+        <target>Aucun enregistrement trouvé</target>
+      </trans-unit>
+      <trans-unit id="YNZdbtH" resname="Create new">
+        <source>Create new</source>
+        <target>Créer</target>
+      </trans-unit>
+      <trans-unit id="usYUJnL" resname="show">
+        <source>show</source>
+        <target>Voir</target>
+      </trans-unit>
+      <trans-unit id="BVAU8Tv" resname="edit">
+        <source>edit</source>
+        <target>Modifier</target>
+      </trans-unit>
+      <trans-unit id="ig4zF8f" resname="New Country">
+        <source>New Country</source>
+        <target>Nouveau pays</target>
+      </trans-unit>
+      <trans-unit id="fsUxyRN" resname="Create new Country">
+        <source>Create new Country</source>
+        <target>Créer un nouveau pays</target>
+      </trans-unit>
+      <trans-unit id="1IPvogP" resname="Back to list">
+        <source>Back to list</source>
+        <target>Revenir à la liste</target>
+      </trans-unit>
+      <trans-unit id="save">
+        <source>Save</source>
+        <target>Enregistrer</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
