@@ -1,0 +1,53 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Author index{% endblock %}
+
+{% block body %}
+
+    <div class="container">
+
+        <h1>{{ "Author index"|trans }}</h1>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>{{ "Id"|trans }}</th>
+                    <th>{{ "Firstname"|trans }}</th>
+                    <th>{{ "Name"|trans }}</th>
+                    <th>{{ "Address"|trans }}</th>
+                    <th>{{ "Zip"|trans }}</th>
+                    <th>{{ "Town"|trans }}</th>
+                    <th>{{ "Actions"|trans }}</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for author in authors %}
+                    <tr>
+                        <td>{{ author.id }}</td>
+                        <td>{{ author.firstname }}</td>
+                        <td>{{ author.name }}</td>
+                        <td>{{ author.address }}</td>
+                        <td>{{ author.zip }}</td>
+                        <td>{{ author.town }}</td>
+                        <td>
+                            <a href="{{ path('app_author_show', {'id': author.id}) }}" class="btn btn-info btn-sm" title="{{ 'show'|trans }}">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+                            <a href="{{ path('app_author_edit', {'id': author.id}) }}" class="btn btn-warning btn-sm" title="{{ 'edit'|trans }}">
+                                <i class="fa-solid fa-pen-to-square"></i>
+                            </a>
+                        </td>
+                    </tr>
+                {% else %}
+                    <tr>
+                       <td colspan="3">{{ "no records found"|trans }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <a href="{{ path('app_author_new') }}"><button class="btn btn-primary">{{ "Create new"|trans }}</button></a>
+
+    </div>
+
+{% endblock %}

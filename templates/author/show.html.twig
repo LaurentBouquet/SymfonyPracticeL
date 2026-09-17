@@ -1,0 +1,48 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{"Author"|trans}}{% endblock %}
+
+{% block body %}
+
+    <div class="container">
+
+        <h1>{{"Author"|trans}}</h1>
+
+        <table class="table">
+            <tbody>
+                <tr>
+                    <th>{{"Id"|trans}}</th>
+                    <td>{{ author.id }}</td>
+                </tr>
+                <tr>
+                    <th>{{"Firstname"|trans}}</th>
+                    <td>{{ author.firstname }}</td>
+                </tr>
+                <tr>
+                    <th>{{"Name"|trans}}</th>
+                    <td>{{ author.name }}</td>
+                </tr>
+                <tr>
+                    <th>{{"Address"|trans}}</th>
+                    <td>{{ author.address }}</td>
+                </tr>
+                <tr>
+                    <th>{{"Zip"|trans}}</th>
+                    <td>{{ author.zip }}</td>
+                </tr>
+                <tr>
+                    <th>{{"Town"|trans}}</th>
+                    <td>{{ author.town }}</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <a class="btn btn-secondary mt-2" href="{{ path('app_author_index') }}">{{ "Back to list"|trans }}</a>
+
+        <a class="btn btn-warning mt-2" href="{{ path('app_author_edit', {'id': author.id}) }}">{{ "edit"|trans }}</a>
+
+        {{ include('author/_delete_form.html.twig') }}
+
+    </div>
+
+{% endblock %}

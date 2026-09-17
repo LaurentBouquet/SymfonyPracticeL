@@ -89,9 +89,109 @@
         <source>Back to list</source>
         <target>Revenir à la liste</target>
       </trans-unit>
-      <trans-unit id="save">
+      <trans-unit id="z9OKodR" resname="Save">
         <source>Save</source>
         <target>Enregistrer</target>
+      </trans-unit>
+      <trans-unit id="D1JXZG6" resname="Books">
+        <source>Books</source>
+        <target>Livres</target>
+      </trans-unit>
+      <trans-unit id="NaSeDGX" resname="Authors">
+        <source>Authors</source>
+        <target>Auteurs</target>
+      </trans-unit>
+      <trans-unit id="imSItxK" resname="Country">
+        <source>Country</source>
+        <target>Pays</target>
+      </trans-unit>
+      <trans-unit id="BCGjfox" resname="Users">
+        <source>Users</source>
+        <target>Utilisateurs</target>
+      </trans-unit>
+      <trans-unit id="CFykyqQ" resname="Admin Dasboard">
+        <source>Admin Dasboard</source>
+        <target>Administration</target>
+      </trans-unit>
+      <trans-unit id="iYGwxh8" resname="Author index">
+        <source>Author index</source>
+        <target>Liste des auteurs</target>
+      </trans-unit>
+      <trans-unit id="b0rVy.t" resname="Firstname">
+        <source>Firstname</source>
+        <target>Prénom</target>
+      </trans-unit>
+      <trans-unit id="jPtXcgB" resname="Address">
+        <source>Address</source>
+        <target>Adresse</target>
+      </trans-unit>
+      <trans-unit id="6A2UfPi" resname="Zip">
+        <source>Zip</source>
+        <target>Code postal</target>
+      </trans-unit>
+      <trans-unit id="KuqwHvQ" resname="Town">
+        <source>Town</source>
+        <target>Ville</target>
+      </trans-unit>
+      <trans-unit id="IZ6Ljjk" resname="Book index">
+        <source>Book index</source>
+        <target>Liste des livres</target>
+      </trans-unit>
+      <trans-unit id=".zZzsFp" resname="Title">
+        <source>Title</source>
+        <target>Titre</target>
+      </trans-unit>
+      <trans-unit id="cQ8Z0Pa" resname="Nbrpages">
+        <source>Nbrpages</source>
+        <target>Nbre de pages</target>
+      </trans-unit>
+      <trans-unit id="Gg.z41F" resname="New Author">
+        <source>New Author</source>
+        <target>Nouvel auteur</target>
+      </trans-unit>
+      <trans-unit id="8T58Za5" resname="Create new Author">
+        <source>Create new Author</source>
+        <target>Créer un nouvel auteur</target>
+      </trans-unit>
+      <trans-unit id="aggB8Id" resname="New Book">
+        <source>New Book</source>
+        <target>Nouveau livre</target>
+      </trans-unit>
+      <trans-unit id="5X.02Q4" resname="Create new Book">
+        <source>Create new Book</source>
+        <target>Créer un nouveau livre</target>
+      </trans-unit>
+      <trans-unit id="Z_crX_u" resname="Delete">
+        <source>Delete</source>
+        <target>Supprimer</target>
+      </trans-unit>
+      <trans-unit id="hNzgF6z" resname="Are you sure you want to delete this item?">
+        <source>Are you sure you want to delete this item?</source>
+        <target>Êtes-vous sûr de vouloir supprimer cet élément ?</target>
+      </trans-unit>
+      <trans-unit id="lphvqj5" resname="Edit Author">
+        <source>Edit Author</source>
+        <target>Modifier l'auteur</target>
+      </trans-unit>
+      <trans-unit id="lmVxnRD" resname="Edit Country">
+        <source>Edit Country</source>
+        <target>Modifier le pays</target>
+      </trans-unit>
+      <trans-unit id="W8PpbrM" resname="Edit Book">
+        <source>Edit Book</source>
+        <target>Modifier le livre</target>
+      </trans-unit>
+      <trans-unit id="1wWwR2z" resname="Update">
+        <source>Update</source>
+        <target>Modifier</target>
+      </trans-unit>
+      <trans-unit id="devFmcu" resname="Author">
+        <source>Author</source>
+        <target>Auteur</target>
+      </trans-unit>
+      <trans-unit id=".I7Gp4i" resname="Book">
+        <source>Book</source>
+        <target>Livre</target>
       </trans-unit>
     </body>
   </file>
