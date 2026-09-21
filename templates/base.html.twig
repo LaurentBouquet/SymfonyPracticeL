@@ -40,7 +40,9 @@
                                 <li><a class="dropdown-item" href="/author">{{"Authors"|trans}}</a></li>
                                 <li><a class="dropdown-item" href="/country">{{"Country"|trans}}</a></li>
                                 <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="/user">{{"Users"|trans}}</a></li>
+                                {% if is_granted('ROLE_ADMIN') %}
+                                    <li><a class="dropdown-item" href="/user">{{"Users"|trans}}</a></li>
+                                {% endif %}
                             </ul>
                         </li>
 
