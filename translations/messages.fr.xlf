@@ -19,7 +19,7 @@
       </trans-unit>
       <trans-unit id="lSX_PHJ" resname="Please sign in">
         <source>Please sign in</source>
-        <target>Créer un compte</target>
+        <target>Se connecter</target>
       </trans-unit>
       <trans-unit id="JZi_tm0" resname="Email">
         <source>Email</source>
@@ -192,6 +192,46 @@
       <trans-unit id=".I7Gp4i" resname="Book">
         <source>Book</source>
         <target>Livre</target>
+      </trans-unit>
+      <trans-unit id="3moZ5hC" resname="Countries">
+        <source>Countries</source>
+        <target>Pays</target>
+      </trans-unit>
+      <trans-unit id="wGrVTrj" resname="Credits">
+        <source>Credits</source>
+        <target>Crédits</target>
+      </trans-unit>
+      <trans-unit id="fQdHKPd" resname="Images">
+        <source>Images</source>
+        <target>Images</target>
+      </trans-unit>
+      <trans-unit id="ysh0eDW" resname="Image index">
+        <source>Image index</source>
+        <target>Liste des images</target>
+      </trans-unit>
+      <trans-unit id="rYHQpCH" resname="Path">
+        <source>Path</source>
+        <target>Chemin</target>
+      </trans-unit>
+      <trans-unit id="VKrWoPi" resname="Image">
+        <source>Image</source>
+        <target>Image</target>
+      </trans-unit>
+      <trans-unit id="W3yX.Gj" resname="actions">
+        <source>actions</source>
+        <target>Actions</target>
+      </trans-unit>
+      <trans-unit id="PuhZjWG" resname="User index">
+        <source>User index</source>
+        <target>Liste des utilisateurs</target>
+      </trans-unit>
+      <trans-unit id="aq2eM8Q" resname="Roles">
+        <source>Roles</source>
+        <target>Rôles</target>
+      </trans-unit>
+      <trans-unit id="qUyUsfE" resname="IsVerified">
+        <source>IsVerified</source>
+        <target>Est vérifié</target>
       </trans-unit>
     </body>
   </file>
