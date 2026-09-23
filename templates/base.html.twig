@@ -38,7 +38,10 @@
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="/book">{{"Books"|trans}}</a></li>
                                 <li><a class="dropdown-item" href="/author">{{"Authors"|trans}}</a></li>
-                                <li><a class="dropdown-item" href="/country">{{"Country"|trans}}</a></li>
+                                <li><a class="dropdown-item" href="/country">{{"Countries"|trans}}</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="/credit">{{"Credits"|trans}}</a></li>
+                                <li><a class="dropdown-item" href="/image">{{"Images"|trans}}</a></li>
                                 <li><hr class="dropdown-divider"></li>
                                 {% if is_granted('ROLE_ADMIN') %}
                                     <li><a class="dropdown-item" href="/user">{{"Users"|trans}}</a></li>
@@ -64,9 +67,10 @@
             </div>
         </nav>
 
-
-        {% block body %}
-        {% endblock %}
+        <div class="container">
+            {% block body %}
+            {% endblock %}
+        </div>
 
     </body>
 </html>
