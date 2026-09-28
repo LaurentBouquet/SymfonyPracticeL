@@ -233,6 +233,42 @@
         <source>IsVerified</source>
         <target>Est vérifié</target>
       </trans-unit>
+      <trans-unit id="7caHqun" resname="Themes">
+        <source>Themes</source>
+        <target>Thèmes</target>
+      </trans-unit>
+      <trans-unit id="bBzp727" resname="Edit Theme">
+        <source>Edit Theme</source>
+        <target>Modifier le thème</target>
+      </trans-unit>
+      <trans-unit id="vci9HOQ" resname="back to list">
+        <source>back to list</source>
+        <target>Retour à la liste</target>
+      </trans-unit>
+      <trans-unit id=".vVxupi" resname="Theme index">
+        <source>Theme index</source>
+        <target>Liste des thèmes</target>
+      </trans-unit>
+      <trans-unit id="NMmVjl0" resname="Description">
+        <source>Description</source>
+        <target>Description</target>
+      </trans-unit>
+      <trans-unit id="d__X.66" resname="Step">
+        <source>Step</source>
+        <target>Etape</target>
+      </trans-unit>
+      <trans-unit id="_Z1KjWt" resname="New Theme">
+        <source>New Theme</source>
+        <target>Nouveau thème</target>
+      </trans-unit>
+      <trans-unit id="1qCw9nP" resname="Create new Theme">
+        <source>Create new Theme</source>
+        <target>Créer un nouveau thème</target>
+      </trans-unit>
+      <trans-unit id="PL2fcxN" resname="Theme">
+        <source>Theme</source>
+        <target>Thème</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

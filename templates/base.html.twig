@@ -40,10 +40,13 @@
                                 <li><a class="dropdown-item" href="/author">{{"Authors"|trans}}</a></li>
                                 <li><a class="dropdown-item" href="/country">{{"Countries"|trans}}</a></li>
                                 <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="/credit">{{"Credits"|trans}}</a></li>
-                                <li><a class="dropdown-item" href="/image">{{"Images"|trans}}</a></li>
-                                <li><hr class="dropdown-divider"></li>
                                 {% if is_granted('ROLE_ADMIN') %}
+                                    <li><a class="dropdown-item" href="/credit">{{"Credits"|trans}}</a></li>
+                                    <li><a class="dropdown-item" href="/image">{{"Images"|trans}}</a></li>
+                                    <li><a class="dropdown-item" href="/theme">{{"Themes"|trans}}</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                {% endif %}
+                                {% if is_granted('ROLE_SUPER_ADMIN') %}
                                     <li><a class="dropdown-item" href="/user">{{"Users"|trans}}</a></li>
                                 {% endif %}
                             </ul>
