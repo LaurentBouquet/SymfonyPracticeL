@@ -38,7 +38,7 @@ class RegistrationControllerTest extends WebTestCase
         self::assertResponseIsSuccessful();
         self::assertPageTitleContains('Register');
 
-        $this->client->submitForm('Register', [
+        $this->client->submitForm("S'enregistrer", [
             'registration_form[email]' => 'me@example.com',
             'registration_form[plainPassword]' => 'password',
             'registration_form[agreeTerms]' => true,
@@ -51,13 +51,13 @@ class RegistrationControllerTest extends WebTestCase
 
         // Ensure the verification email was sent
         // Use either assertQueuedEmailCount() || assertEmailCount() depending on your mailer setup
-        // self::assertQueuedEmailCount(1);
-        self::assertEmailCount(1);
+        self::assertQueuedEmailCount(1);
+        //self::assertEmailCount(1);
 
         self::assertCount(1, $messages = $this->getMailerMessages());
         self::assertEmailAddressContains($messages[0], 'from', 'laurent.bouquet@joliciel.eu');
         self::assertEmailAddressContains($messages[0], 'to', 'me@example.com');
-        self::assertEmailTextBodyContains($messages[0], 'This link will expire in 1 hour.');
+        self::assertEmailTextBodyContains($messages[0], 'This link will expire in 1 heure.');
 
         // Login the new user
         $this->client->followRedirect();
