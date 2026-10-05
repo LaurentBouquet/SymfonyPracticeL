@@ -42,6 +42,7 @@ security:
         - { path: ^/credit, roles: ROLE_ADMIN }
         - { path: ^/image, roles: ROLE_ADMIN }
         - { path: ^/theme, roles: ROLE_ADMIN }
+        - { path: ^/question, roles: ROLE_ADMIN }
         - { path: ^/book, roles: ROLE_USER }
         # - { path: ^/profile, roles: ROLE_USER }
 
