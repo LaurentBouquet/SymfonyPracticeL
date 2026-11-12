@@ -19,7 +19,9 @@
     <hr/>
 
     <button class="btn">{{ button_label|default('Save') }}</button>
+
 {{ form_end(form) }}
+{# {{ form_end(form, {'render_rest': false}) }} #}
 
 <script>
     document

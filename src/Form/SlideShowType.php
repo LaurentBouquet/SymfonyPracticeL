@@ -21,6 +21,7 @@ class SlideShowType extends AbstractType
             ->add('slides', CollectionType::class, [
                 'entry_type' => SlideType::class,
                 'entry_options' => ['label' => false],
+                'label' => false,
                 'allow_add' => true,
                 'allow_delete' => true,
                 'by_reference' => false,

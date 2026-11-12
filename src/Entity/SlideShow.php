@@ -28,7 +28,7 @@ class SlideShow
     /**
      * @var Collection<int, Slide>
      */
-    #[ORM\OneToMany(targetEntity: Slide::class, mappedBy: 'slide_show')]
+    #[ORM\OneToMany(targetEntity: Slide::class, mappedBy: 'slide_show', orphanRemoval: true, cascade: ['persist'])]
     private Collection $slides;
 
     public function __construct()
