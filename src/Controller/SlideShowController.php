@@ -4,6 +4,7 @@ namespace App\Controller;
 
 use App\Entity\SlideShow;
 use App\Form\SlideShowType;
+use App\Repository\SlideRepository;
 use App\Repository\SlideShowRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -42,13 +43,29 @@ final class SlideShowController extends AbstractController
         ]);
     }
 
-    #[Route('/{id}', name: 'app_slide_show_show', methods: ['GET'])]
-    public function show(SlideShow $slideShow): Response
+    #[Route('/{id}', name: 'app_slide_show_show')]
+    public function show(SlideRepository $slideRepository): Response
+    {
+        $slides = $slideRepository->findBy(
+            [],
+            ['position' => 'ASC']
+        );
+
+        return $this->render('slide_show/slideshow.html.twig', [
+            'slides' => $slides,
+        ]);
+    }
+
+    #[Route('/{id}/show', name: 'app_slide_show_show_backup', methods: ['GET'])]
+    public function show2(SlideShow $slideShow): Response
     {
         return $this->render('slide_show/show.html.twig', [
             'slide_show' => $slideShow,
         ]);
     }
+
+
+
 
     #[Route('/{id}/edit', name: 'app_slide_show_edit', methods: ['GET', 'POST'])]
     public function edit(Request $request, SlideShow $slideShow, EntityManagerInterface $entityManager): Response

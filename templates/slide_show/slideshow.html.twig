@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}SlideShow{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/black.css">
+{% endblock %}
+
+{% block body %}
+    <div class="reveal">
+        <div class="slides">
+            {% for slide in slides %}
+                <section>
+                    {# <img src="{{ asset(slide.image) }}" alt="{{ slide.title }}"> #}
+                    <h2>{{ slide.title }}</h2>
+                    <p>{{ slide.description }}</p>
+                </section>
+            {% endfor %}
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+    <script>
+        Reveal.initialize({
+            hash: true,
+            transition: 'slide'
+        });
+    </script>
+{% endblock %}
+
