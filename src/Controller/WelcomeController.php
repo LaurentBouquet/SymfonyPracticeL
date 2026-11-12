@@ -18,7 +18,7 @@ final class WelcomeController extends AbstractController
             new \DateTimeZone('Europe/Paris')
         );
 
-        $appName = $translator->trans('DigitalFirstSteps');
+        $appName = $translator->trans("DigitalFirstSteps");
 
         //Tracer les visites
         $logger->info("Application is starting...");

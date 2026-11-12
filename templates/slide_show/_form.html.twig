@@ -1,0 +1,70 @@
+{# templates/slide_show/new.html.twig #}
+{{ form_start(form) }}
+    {{ form_row(form.title) }}
+    {{ form_row(form.description) }}
+    {{ form_row(form.image) }}
+
+    <h3>Réponses</h3>
+    <ul class="slides"
+        data-index="{{ form.slides|length > 0 ? form.slides|last.vars.name + 1 : 0 }}"
+        data-prototype="{{ form_widget(form.slides.vars.prototype)|e('html_attr') }}"
+    >
+        {% for slide in form.slides %}
+            <li>{{ form_row(slide) }}</li>
+        {% endfor %}
+    </ul>
+
+    <button type="button" class="add_item_link" data-collection-holder-class="slides">Ajouter une diapo</button>
+
+    <hr/>
+
+    <button class="btn">{{ button_label|default('Save') }}</button>
+{{ form_end(form) }}
+
+<script>
+    document
+        .querySelectorAll('.add_item_link')
+        .forEach(btn => {
+            btn.addEventListener("click", addFormToCollection)
+        });
+
+    document
+        .querySelectorAll('ul.slides li')
+        .forEach((slide) => {
+            addAnswerFormDeleteLink(slide)
+        });
+
+    function addFormToCollection(e) {
+        const collectionHolder = document.querySelector('.' + e.currentTarget.dataset.collectionHolderClass);
+
+        const item = document.createElement('li');
+
+        item.innerHTML = collectionHolder
+            .dataset
+            .prototype
+            .replace(
+                /__name__/g,
+                collectionHolder.dataset.index
+            );
+
+        collectionHolder.appendChild(item);
+
+        collectionHolder.dataset.index++;
+
+        // add a delete link to the new form
+        addAnswerFormDeleteLink(item);
+    }
+
+    function addAnswerFormDeleteLink(item) {
+        const removeFormButton = document.createElement('button');
+        removeFormButton.innerText = 'Delete this slide';
+
+        item.append(removeFormButton);
+
+        removeFormButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            // remove the li for the slide form
+            item.remove();
+        });
+    }
+</script>
