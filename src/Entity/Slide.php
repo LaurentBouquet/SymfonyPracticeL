@@ -29,6 +29,9 @@ class Slide
     #[ORM\ManyToOne(inversedBy: 'slides')]
     private ?SlideShow $slide_show = null;
 
+    #[ORM\Column(type: Types::TEXT, nullable: true)]
+    private ?string $content = null;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -90,6 +93,18 @@ class Slide
     public function setSlideShow(?SlideShow $slide_show): static
     {
         $this->slide_show = $slide_show;
+
+        return $this;
+    }
+
+    public function getContent(): ?string
+    {
+        return $this->content;
+    }
+
+    public function setContent(string $content): static
+    {
+        $this->content = $content;
 
         return $this;
     }

@@ -6,6 +6,7 @@ use App\Entity\Slide;
 use App\Entity\SlideShow;
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
@@ -16,6 +17,10 @@ class SlideType extends AbstractType
         $builder
             ->add('title')
             ->add('description')
+            ->add('content', TextareaType::class, [
+                'label' => 'Contenu',
+                'attr' => ['rows' => 4],
+            ])
             ->add('image')
             ->add('position')
             ->add('slide_show', EntityType::class, [
